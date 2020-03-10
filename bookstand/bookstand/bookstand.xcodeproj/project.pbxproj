@@ -10,6 +10,8 @@
 		E306498D233D9AA6000F5B7C /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = E306498C233D9AA6000F5B7C /* Book.swift */; };
 		E306498F233D9ABA000F5B7C /* NumberFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E306498E233D9ABA000F5B7C /* NumberFormatterExtensions.swift */; };
 		E3064991233D9AF7000F5B7C /* DateFormatterExtendions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3064990233D9AF7000F5B7C /* DateFormatterExtendions.swift */; };
+		E384BD1824175BC0008B0D4D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E384BD1724175BC0008B0D4D /* APIService.swift */; };
+		E384BD2324176950008B0D4D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E384BD2224176950008B0D4D /* HTTPMethod.swift */; };
 		E3C1E9EC233CD18D00FC12CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1E9EB233CD18D00FC12CD /* AppDelegate.swift */; };
 		E3C1E9EE233CD18D00FC12CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1E9ED233CD18D00FC12CD /* SceneDelegate.swift */; };
 		E3C1E9F1233CD18D00FC12CD /* bookstand.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3C1E9EF233CD18D00FC12CD /* bookstand.xcdatamodeld */; };
@@ -47,6 +49,8 @@
 		E306498C233D9AA6000F5B7C /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		E306498E233D9ABA000F5B7C /* NumberFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatterExtensions.swift; sourceTree = "<group>"; };
 		E3064990233D9AF7000F5B7C /* DateFormatterExtendions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtendions.swift; sourceTree = "<group>"; };
+		E384BD1724175BC0008B0D4D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		E384BD2224176950008B0D4D /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		E3C1E9E8233CD18D00FC12CD /* bookstand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bookstand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C1E9EB233CD18D00FC12CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3C1E9ED233CD18D00FC12CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,7 +127,9 @@
 		E3064995233D9B57000F5B7C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E384BD2224176950008B0D4D /* HTTPMethod.swift */,
 				E3C1EA1E233CD42500FC12CD /* BookSearchAPI.swift */,
+				E384BD1724175BC0008B0D4D /* APIService.swift */,
 				E3C1EA20233CD62B00FC12CD /* ImageService.swift */,
 			);
 			path = Services;
@@ -328,6 +334,7 @@
 			files = (
 				E3C1E9EC233CD18D00FC12CD /* AppDelegate.swift in Sources */,
 				E3064991233D9AF7000F5B7C /* DateFormatterExtendions.swift in Sources */,
+				E384BD2324176950008B0D4D /* HTTPMethod.swift in Sources */,
 				E3C1E9F1233CD18D00FC12CD /* bookstand.xcdatamodeld in Sources */,
 				E3C1E9F3233CD18D00FC12CD /* ContentView.swift in Sources */,
 				E3C1EA23233CD86700FC12CD /* BookRow.swift in Sources */,
@@ -335,6 +342,7 @@
 				E306498F233D9ABA000F5B7C /* NumberFormatterExtensions.swift in Sources */,
 				E306498D233D9AA6000F5B7C /* Book.swift in Sources */,
 				E3C1EA1F233CD42500FC12CD /* BookSearchAPI.swift in Sources */,
+				E384BD1824175BC0008B0D4D /* APIService.swift in Sources */,
 				E3C1E9EE233CD18D00FC12CD /* SceneDelegate.swift in Sources */,
 				E3F4CAAC233E1F9E00CDD4BA /* DateExtendions.swift in Sources */,
 				E3C1EA21233CD62B00FC12CD /* ImageService.swift in Sources */,

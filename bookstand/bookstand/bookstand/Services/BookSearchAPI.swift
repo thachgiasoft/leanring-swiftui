@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Combine
 
 struct BookSearchAPI {
 
@@ -41,6 +42,23 @@ struct BookSearchAPI {
                 return "search/book?target=\(target.rawValue)"
             }
         }
+
+        var method: HTTPMethod {
+            switch self {
+            case .search:
+                return .get
+            }
+        }
+    }
+
+    func request<Response>(endpoint: Endpoint, params: [String: Any]?) -> AnyPublisher<Response, APIError> where Response : Decodable {
+        let queryURL = baseURL.appendingPathComponent(endpoint.path)
+        var components = URLComponents(url: queryURL, resolvingAgainstBaseURL: true)!
+        components.queryItems = [
+           URLQueryItem(name: "Authorization", value: apiKey),
+        ]
+
+        fatalError()
     }
 
     func GET<T: Codable>(endpoint: Endpoint,
@@ -67,7 +85,7 @@ struct BookSearchAPI {
 
         var request = URLRequest(url: url)
 
-        request.httpMethod = "GET"
+        request.httpMethod = endpoint.method.rawValue
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
 
             guard let data = data else {
