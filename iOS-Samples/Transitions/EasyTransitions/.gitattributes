@@ -1,4 +1,0 @@
-*.sh linguist-language=Swift
-*.m linguist-language=Swift
-*.h linguist-language=Swift
-*.rb linguist-language=Swift
